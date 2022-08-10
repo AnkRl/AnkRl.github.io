@@ -8,6 +8,15 @@
 </head>
 
 <body>
+        <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                $('#content1').load("https://ankrl.github.io/fig_sets.html");
+                $('#content2').load("https://ankrl.github.io/fig_means.html");
+                $('#content3').load("https://ankrl.github.io/hist_final.html");
+                });
+        </script>
         <div class="tabinator">
                 <h2>Experiment Results: Identification of Repairable Regions in Deep Neural Networks</h2>
                 <input type="radio" id="tab1" name="tabs" checked>
@@ -17,13 +26,10 @@
                 <input type="radio" id="tab3" name="tabs">
                 <label for="tab3">Label Distributions</label>
                 <div id="content1">
-                        <object type="text/html" data="https://ankrl.github.io/fig_sets.html"></object>
                 </div>
                 <div id="content2">
-                        <object type="text/html" data="https://ankrl.github.io/fig_means.html"></object>
                 </div>
                 <div id="content3">
-                        <object type="text/html" data="https://ankrl.github.io/hist_final.html"></object>
                 </div>
         </div>
 </body>
